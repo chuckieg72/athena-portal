@@ -1,0 +1,8 @@
+{
+  "facebook_url": "https://www.facebook.com/share/178RnRA35H/?mibextid=wwXIfr",
+  "webhooks": {
+    "primary_replit": "https://REPLACE_WITH_YOUR_REPLIT_WEBHOOK_ENDPOINT",
+    "secondary_zapier": "https://hooks.zapier.com/hooks/catch/REPLACE/REPLACE/",
+    "apps_script_optional": "https://script.google.com/macros/s/AKfycbwH7rs_7tAcsoFoS1R9UNlD_83ZLXhaccEKeAqYO3JZYfl1TR60rx7xjjTpTGiYSbIN/exec"
+  }
+}
