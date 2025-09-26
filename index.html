@@ -10,47 +10,84 @@
       margin:0; font-family: system-ui, sans-serif; background:#0a0f19; color:#e9edf2;
       -webkit-font-smoothing: antialiased; line-height:1.55;
     }
-    .wrap { max-width: 980px; margin:0 auto; padding:24px; }
-    header { display:flex; align-items:center; justify-content:space-between; margin-bottom:20px; }
-    .brand { font-weight:800; font-size:18px; }
-    h1 { font-size:clamp(26px,5vw,42px); margin:0 0 12px 0; }
-    p { color:#9fb2c8; margin:0 0 12px 0; }
-    .btn {
-      display:inline-block; padding:12px 16px; margin-top:10px;
-      background:linear-gradient(145deg,#3aa0ff,#5ab8ff); color:#001018; font-weight:700;
-      border-radius:12px; text-decoration:none;
+    header {
+      padding:20px; text-align:center; background:#101728;
     }
-    .btn:active { transform:translateY(1px); }
-    footer { text-align:center; margin-top:40px; color:#9fb2c8; font-size:12px; }
+    header h1 { margin:0; font-size:clamp(26px,5vw,42px); }
+    header p { color:#9fb2c8; margin:8px 0 0; }
+
+    .hero {
+      background:url('https://picsum.photos/1200/400?grayscale') center/cover no-repeat;
+      padding:100px 20px; text-align:center; color:#fff;
+    }
+    .hero h2 {
+      font-size:clamp(28px,6vw,50px); margin:0 0 12px;
+      text-shadow:0 4px 8px rgba(0,0,0,.6);
+    }
+    .hero .btn {
+      padding:14px 22px; background:#3aa0ff; color:#001018; font-weight:700;
+      border-radius:12px; text-decoration:none; box-shadow:0 4px 10px rgba(0,0,0,.4);
+    }
+
+    .services {
+      display:grid; gap:20px; padding:40px 20px;
+      grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .card {
+      background:#101728; border-radius:14px; overflow:hidden; box-shadow:0 8px 20px rgba(0,0,0,.4);
+    }
+    .card img { width:100%; height:180px; object-fit:cover; }
+    .card h3 { margin:16px; font-size:20px; }
+    .card p { margin:0 16px 20px; color:#9fb2c8; }
+
+    footer {
+      text-align:center; padding:20px; color:#9fb2c8; font-size:13px; background:#101728;
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="brand">Athena • Today's Marketing Solutions LLC</div>
-      <a href="athena.html" class="btn">Go to Athena Payment Portal</a>
-    </header>
 
-    <main>
-      <h1>Content Creator Services</h1>
-      <p>We provide a tiered set of services for creators, each mapped to a specific service number for easy reference.
-      Starting at <b>Service 1</b>, we offer the Starter Package at $1, followed by Comment Boost at $2, Like Surge at $3,
-      Hashtag Tune-Up at $4, and Bio Polish at $5. Higher tiers expand into Thumbnail Touch-Up ($6), Caption Coaching ($7),
-      Story Highlights Refresh ($8), Link in Bio Setup ($9), and Starter Promo Blast ($10).</p>
+<header>
+  <h1>Today's Marketing Solutions LLC</h1>
+  <p>Helping creators grow, engage, and convert audiences</p>
+</header>
 
-      <p>As the levels increase, so does the impact. DM Response Triage ($11/month), Hashtag Research Pack ($12),
-      Profile Audit ($13), Post Scheduler Setup ($14), and Engagement Warm-Up ($15/month) give creators practical tools
-      to grow. For content itself, we offer Shorts/Reels Trim ($16 per video) and SEO Title/Tags Pack ($17). Outreach and
-      audience interaction options include Collab Outreach ($18 per campaign) and Fan Q&A Setup ($19).</p>
+<section class="hero">
+  <h2>Level Up Your Content Creation</h2>
+  <a href="athena.html" class="btn">Go to Athena Payment Portal</a>
+</section>
 
-      <p><b>Service 20</b> unlocks our <b>Add App Subscription — $5/month</b>, giving you ongoing app presence,
-      link integration, and support. Beyond this, advanced bundles are also available, like Service 21’s Advanced App
-      Bundle at $25/month.</p>
-
-      <a href="athena.html" class="btn">Start with Service 20 — $5/mo</a>
-    </main>
-
-    <footer>© 2025 Today's Marketing Solutions LLC • Hamilton, Ohio</footer>
+<section class="services">
+  <div class="card">
+    <img src="https://picsum.photos/400/200?random=1" alt="Starter Package">
+    <h3>Starter Package (Service 1)</h3>
+    <p>Kick off your creator journey with profile polish and setup guidance to make a strong first impression.</p>
   </div>
+  <div class="card">
+    <img src="https://picsum.photos/400/200?random=2" alt="Engagement Boost">
+    <h3>Engagement Boost (Services 2–10)</h3>
+    <p>From comment boosts to promo blasts, get your content noticed and build consistent engagement.</p>
+  </div>
+  <div class="card">
+    <img src="https://picsum.photos/400/200?random=3" alt="Optimization Tools">
+    <h3>Optimization Tools (Services 11–19)</h3>
+    <p>Advanced hashtag packs, scheduler setup, and profile audits to sharpen your strategy and growth.</p>
+  </div>
+  <div class="card">
+    <img src="https://picsum.photos/400/200?random=4" alt="App Subscription">
+    <h3>App Subscription (Service 20)</h3>
+    <p>For just $5/month, keep your creator tools running seamlessly with app access and ongoing support.</p>
+  </div>
+  <div class="card">
+    <img src="https://picsum.photos/400/200?random=5" alt="Advanced Bundles">
+    <h3>Advanced Bundles (Service 21+)</h3>
+    <p>Take it to the next level with bundled growth services for maximum reach and conversions.</p>
+  </div>
+</section>
+
+<footer>
+  © 2025 Today's Marketing Solutions LLC • Hamilton, Ohio
+</footer>
+
 </body>
 </html>
