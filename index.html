@@ -1,93 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Today's Marketing Solutions LLC — Content Creator Services</title>
-  <meta name="description" content="Content creator services that help you get seen, grow faster, and convert more.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Today's Marketing Solutions LLC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
-      margin:0; font-family: system-ui, sans-serif; background:#0a0f19; color:#e9edf2;
-      -webkit-font-smoothing: antialiased; line-height:1.55;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f8f9fa;
+      color: #222;
     }
     header {
-      padding:20px; text-align:center; background:#101728;
+      background-color: #ffffff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
-    header h1 { margin:0; font-size:clamp(26px,5vw,42px); }
-    header p { color:#9fb2c8; margin:8px 0 0; }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #0077ff;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #222;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #0077ff;
+    }
 
     .hero {
-      background:url('https://picsum.photos/1200/400?grayscale') center/cover no-repeat;
-      padding:100px 20px; text-align:center; color:#fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 3rem 1rem;
+      background: linear-gradient(120deg, #0077ff, #00b4d8);
+      color: white;
+    }
+    .hero img {
+      max-width: 600px;
+      width: 90%;
+      margin-top: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     }
     .hero h2 {
-      font-size:clamp(28px,6vw,50px); margin:0 0 12px;
-      text-shadow:0 4px 8px rgba(0,0,0,.6);
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
     }
-    .hero .btn {
-      padding:14px 22px; background:#3aa0ff; color:#001018; font-weight:700;
-      border-radius:12px; text-decoration:none; box-shadow:0 4px 10px rgba(0,0,0,.4);
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1.1rem;
     }
 
     .services {
-      display:grid; gap:20px; padding:40px 20px;
-      grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1rem;
     }
-    .card {
-      background:#101728; border-radius:14px; overflow:hidden; box-shadow:0 8px 20px rgba(0,0,0,.4);
+    .services h3 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
     }
-    .card img { width:100%; height:180px; object-fit:cover; }
-    .card h3 { margin:16px; font-size:20px; }
-    .card p { margin:0 16px 20px; color:#9fb2c8; }
+    .service-item {
+      background: white;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      margin-bottom: 1rem;
+    }
+    .service-item h4 {
+      margin: 0;
+      color: #0077ff;
+    }
+    .service-item p {
+      margin: 0.5rem 0 0;
+      font-size: 0.95rem;
+      color: #444;
+    }
+    .service-item span.price {
+      display: inline-block;
+      background: #00b4d8;
+      color: white;
+      padding: 0.25rem 0.5rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      margin-top: 0.5rem;
+    }
+
+    .cta {
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .cta a {
+      display: inline-block;
+      background: #0077ff;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .cta a:hover {
+      background: #005fcc;
+    }
 
     footer {
-      text-align:center; padding:20px; color:#9fb2c8; font-size:13px; background:#101728;
+      background: #f1f1f1;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Today's Marketing Solutions</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#pay">Pay</a>
+    </nav>
+  </header>
 
-<header>
-  <h1>Today's Marketing Solutions LLC</h1>
-  <p>Helping creators grow, engage, and convert audiences</p>
-</header>
+  <section class="hero">
+    <h2>Grow Your Audience & Boost Engagement</h2>
+    <p>We help content creators stand out online with growth campaigns, branding, and promotional strategies that actually work.</p>
+    <img src="https://images.unsplash.com/photo-1606851093732-bb7b7fd20f13?auto=format&fit=crop&w=1000&q=80" alt="Example content creator video thumbnail">
+  </section>
 
-<section class="hero">
-  <h2>Level Up Your Content Creation</h2>
-  <a href="athena.html" class="btn">Go to Athena Payment Portal</a>
-</section>
+  <section class="services" id="services">
+    <h3>Our Services</h3>
 
-<section class="services">
-  <div class="card">
-    <img src="https://picsum.photos/400/200?random=1" alt="Starter Package">
-    <h3>Starter Package (Service 1)</h3>
-    <p>Kick off your creator journey with profile polish and setup guidance to make a strong first impression.</p>
-  </div>
-  <div class="card">
-    <img src="https://picsum.photos/400/200?random=2" alt="Engagement Boost">
-    <h3>Engagement Boost (Services 2–10)</h3>
-    <p>From comment boosts to promo blasts, get your content noticed and build consistent engagement.</p>
-  </div>
-  <div class="card">
-    <img src="https://picsum.photos/400/200?random=3" alt="Optimization Tools">
-    <h3>Optimization Tools (Services 11–19)</h3>
-    <p>Advanced hashtag packs, scheduler setup, and profile audits to sharpen your strategy and growth.</p>
-  </div>
-  <div class="card">
-    <img src="https://picsum.photos/400/200?random=4" alt="App Subscription">
-    <h3>App Subscription (Service 20)</h3>
-    <p>For just $5/month, keep your creator tools running seamlessly with app access and ongoing support.</p>
-  </div>
-  <div class="card">
-    <img src="https://picsum.photos/400/200?random=5" alt="Advanced Bundles">
-    <h3>Advanced Bundles (Service 21+)</h3>
-    <p>Take it to the next level with bundled growth services for maximum reach and conversions.</p>
-  </div>
-</section>
+    <div class="service-item">
+      <h4>Follower Growth Campaigns <span class="price">$10+</span></h4>
+      <p>Targeted strategies to organically increase your followers across platforms. Fulfilled via engagement pods, cross-promotion, and audience targeting.</p>
+    </div>
 
-<footer>
-  © 2025 Today's Marketing Solutions LLC • Hamilton, Ohio
-</footer>
+    <div class="service-item">
+      <h4>Engagement Boosting <span class="price">$5+</span></h4>
+      <p>Interaction campaigns to raise visibility on your posts through likes, comments, and shares. Delivered within 24–48 hours of purchase.</p>
+    </div>
 
+    <div class="service-item">
+      <h4>Content Promotion <span class="price">$15+</span></h4>
+      <p>We push your videos or posts through our network to get more eyes and drive virality. Great for TikTok, Instagram Reels, and YouTube Shorts.</p>
+    </div>
+
+    <div class="service-item">
+      <h4>Hashtag & Trend Optimization <span class="price">$8+</span></h4>
+      <p>We research trending hashtags in your niche and apply them to maximize reach and discoverability.</p>
+    </div>
+
+    <div class="service-item">
+      <h4>Creator Branding Support <span class="price">$20+</span></h4>
+      <p>Profile optimization, bio writing, and visual branding to make your page stand out professionally.</p>
+    </div>
+
+    <div class="service-item">
+      <h4>Ad Campaign Setup & Management <span class="price">$50+</span></h4>
+      <p>We run affordable paid ads to boost your growth quickly and efficiently. Includes setup, targeting, and weekly reports.</p>
+    </div>
+
+  </section>
+
+  <section class="cta" id="pay">
+    <a href="https://todaysmarketingsolutionsllc.org" target="_blank">Make a Payment</a>
+  </section>
+
+  <footer>
+    © 2025 Today's Marketing Solutions LLC — All rights reserved.
+  </footer>
 </body>
 </html>
